@@ -43,7 +43,7 @@ class App extends Component {
       let s = eval(this.state.output)
       console.log("Reached Evaluation");
       this.setState({
-        output: (s) + "",
+        output: (s || "0") + "",
         outputDisp: true
       })
     } catch(e) {
